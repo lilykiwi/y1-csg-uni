@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Charlotte Ward" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generic.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+
+    <!-- Primary Meta Tags -->
+    <title>Charlotte Ward 435-A1 Project Site</title>
+    <meta name="title" content="Charlotte Ward 435-A1 Project Site" />
+    <meta
+      name="description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Charlotte Ward 435-A1 Project Site" />
+    <meta
+      property="og:description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Charlotte Ward 435-A1 Project Site"
+    />
+    <meta
+      property="twitter:description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+
+    <!-- Fira Code font from Google Fonts API -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style and js for prism.js -->
+    <link rel="stylesheet" href="css/prism.css" />
+    <script src="js/prism.js"></script>
+
+    <!-- lightweight scrollspy script -->
+    <!-- https://github.com/sidsbrmnn/scrollspy -->
+    <script src="js/scrollspy.js"></script>
+    <script>
+      window.onload = function () {
+        scrollSpy("#nav-scrollspy", {
+          sectionSelector: "article",
+          activeClass: "nav-active",
+          offset: 100,
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-container">
+        <div class="img-box">
+          <img src="image/mask-2-colour.png" alt="Sidebar Logo" />
+        </div>
+        <h3>Lottie's Page</h3>
+        <nav id="navbar" class="nav">
+          <a class="nav-box nav-active" href="#">Home</a>
+          <div class="nav-indent" id="nav-scrollspy">
+            <a class="nav-box nav-active" href="#post1">Semantic HTML</a>
+            <a class="nav-box" href="#post2">Object-Oriented CSS</a>
+            <a class="nav-box" href="#post3">SASS/SCSS Preprocessing</a>
+            <a class="nav-box" href="#post4">Flexbox</a>
+            <a class="nav-box" href="#post5">Javascript & TypeScript</a>
+            <a class="nav-box" href="#post6">JS Code Highlighting</a>
+            <a class="nav-box" href="#post7">jQuery</a>
+            <a class="nav-box" href="#post8">Node.js</a>
+            <a class="nav-box" href="#post9">React</a>
+            <a class="nav-box" href="#post10">WebPack</a>
+            <a class="nav-box" href="#post11">Electron</a>
+          </div>
+          <a class="nav-box" href="tutorial.html">Study Tips</a>
+          <a class="nav-box" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="wrapper">
+      <main class="container">
+        <article id="post1">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post1">#</a>
+              Week 1 | Semantic HTML
+            </h1>
+            <hr />
+            <h5>Date written: 2020-10-10</h5>
+          </header>
+          <p>
+            Semantic HTML is a feature of modern webpages that allows for
+            elements to be defined semantically. This differs from standard
+            HTML, where logic and style are added using classes and IDs. For
+            example,
+          </p>
+          <pre><code class="lang-html">&lt;div class="article"&gt;</code></pre>
+          <p>versus,</p>
+          <pre><code class="lang-html">&lt;article&gt;</code></pre>
+          <p>
+            These differ in a few ways. For one, the
+            <code>&lt;div&gt;</code> element inherits nothing outside of what's
+            already included with the div element. Additionally, it sets up the
+            class <code>.article</code> for use with selection with CSS or
+            jQuery.
+          </p>
+          <p>
+            Alternately, the
+            <code>article</code> element inherits from the standard div, and
+            also from the standard article object. In this case, there's nothing
+            outside of <code>display: block;</code>, however in other cases this
+            is significant. Additionally, the CSS selector for this element is
+            <code>article</code>, without the <code>.</code> or
+            <code>#</code> that comes along with Classes and IDs respectively.
+            <a href="#1-1">(w3schools, n.d.)</a>
+          </p>
+          <p>
+            There's a bunch of these elements which carry their own inherited
+            style and logic, but some of the lesser used ones include:
+          </p>
+          <pre><code class="lang-html">&lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt; , &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, &lt;time&gt;</code></pre>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="1-1">
+              <p>
+                <a class="anchor-marker" href="#1-1">#</a>
+                w3schools, (n.d.). HTML Semantic Elements. [online] Available at
+                <a
+                  href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                  >https://www.w3schools.com/html/html5_semantic_elements.asp</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post2">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post2">#</a>
+              Week 2 | Object-Oriented CSS
+            </h1>
+            <hr />
+            <h5>Date written: 2020-10-17</h5>
+          </header>
+          <p>
+            Object-Oriented CSS is a set of implicit conventions for CSS that
+            names values based on what they would normally be in an
+            object-oriented language. Traditional CSS has no restrictions for
+            class and ID names, allowing anything including the names of
+            semantic elements. For example, a <code>.nav</code> class is fully
+            allowed, even in spite of the existing
+            <code>&lt;nav&gt;</code> element.
+          </p>
+          <p>
+            A good example of this kind of convention is Oxygen, a convention
+            for CSS designed around applying the OO method to naming elements in
+            stylesheets <a href="#2-1">(Oxygen, n.d.)</a>. This convention is
+            fairly similar, with only 4 types of objects included in the
+            specification. These are:
+          </p>
+          <table class="table table-w2">
+            <tr>
+              <td>Object</td>
+              <td><code>.button</code><br /><code>.menu</code></td>
+              <td><code>.noun</code></td>
+            </tr>
+            <tr>
+              <td>Child-Object</td>
+              <td><code>.button-caret</code><br /><code>.menu-item</code></td>
+              <td><code>.noun-noun</code></td>
+            </tr>
+            <tr>
+              <td>Subclass</td>
+              <td>
+                <code>.primary-button</code><br /><code>.popup-menu</code>
+              </td>
+              <td><code>.adjective-noun</code></td>
+            </tr>
+            <tr>
+              <td>Modifier</td>
+              <td><code>.is-selected</code><br /><code>.scrollable</code></td>
+              <td>
+                <code>.prefix-adjective</code> or<br /><code>.adjective</code>
+              </td>
+            </tr>
+          </table>
+          <p><a href="#2-1">(Oxygen, n.d.)</a></p>
+          <p>
+            Using this framework, it's possible to have a form of inheritance,
+            whereby child-objects assume the style of their parent objects. For
+            example:
+          </p>
+          <pre><code class="lang-html">&lt;button class="btn btn-warning"&gt;&lt;/button&gt;</code></pre>
+          <p>
+            Follows a similar process to <code>.btn-warning</code> being truly
+            inherited from <code>btn</code>. As both classes are in use on the
+            object, <code>btn-warning</code> can include modifications on the
+            core <code>btn</code> class to turn it into a warning button, much
+            like how inheritance works in other languages.
+          </p>
+          <p>
+            This convention can help to standardise object styles, as any
+            deviation from a standard object inherits from the main object much
+            like in a true OO language. Using this, modifying
+            <code>btn</code> will change all buttons, regardless of the child
+            type each button on the page uses.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="2-1">
+              <a class="anchor-marker" href="#2-1">#</a>
+              <p>
+                Oxygen, (n.d.). An object-oriented methodology for stylesheets.
+                [online] Available at:
+                <a href="http://oxygencss.com/">http://oxygencss.com/</a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post3">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post3">#</a>Week 3 | SASS/SCSS
+              Preprocessing
+            </h1>
+            <hr />
+            <h5>Date written: 2020-10-24</h5>
+          </header>
+          <p>
+            Sass (and SCSS) is a versatile and mature CSS extension language
+            that allows for the utilisation of more complex features, such as
+            variables and shorthands, as well as simplifying the stylesheet
+            development process. Sass is compiled into native CSS, and is
+            generally far less complex than standard CSS. For this reason, Sass
+            is used in modern web development because of it's raw power compared
+            to pure CSS and the reduction in complexity it affords.
+          </p>
+          <p>
+            One key element in what makes Sass useful is it's handling of
+            variables, which differs from CSS variables in a few key ways. This
+            includes how the variables can be modified and have scope, unlike
+            with CSS, and can additionally include more complex data like for
+            shadows and borders. For example:
+          </p>
+          <pre><code class="lang-scss">$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}</code></pre>
+          <p>Will be compiled into:</p>
+          <pre><code class="lang-css">.alert {
+  border: 1px solid rgba(198, 83, 140, 0.88);
+}
+</code></pre>
+          <p>
+            This is particularly useful as it allows for variables to be used
+            for site-wide consistency. There's many more complex features that
+            Sass affords, which are fully documented
+            <a href="#3-3">(Sass, 2020)</a>. Worth mentioning is that valid
+            SASS/SCSS must be compiled for use on the web, adding a small extra
+            step to deployment. This can be worked into a workflow like with
+            node or a standard shell script using the command:
+          </p>
+          <pre
+            class="command-line lang-bash"
+            data-user="erin"
+            data-host="localhost"
+          ><code class="lang-bash">sass input.scss output.css</code></pre>
+          <p>
+            This will build the SCSS file into CSS, ready for deployment.
+            There's an argument to be made that this extra step can be
+            detrimental, however I believe that the extended functionality can
+            be a huge advantage, especially so when integrated into the
+            development and deployment workflow.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="3-1">
+              <a class="anchor-marker" href="#3-1">#</a>
+              <p>
+                Sass, (2020). CSS with superpowers. [online] Available at:
+                <a href="https://sass-lang.com/">https://sass-lang.com/</a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="3-2">
+              <a class="anchor-marker" href="#3-2">#</a>
+              <p>
+                Sass, (2020). Install Sass. [online] Available at:
+                <a href="https://sass-lang.com/install"
+                  >https://sass-lang.com/install</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="3-3">
+              <a class="anchor-marker" href="#3-3">#</a>
+              <p>
+                Sass, (2020). Documentation. [online] Available at:
+                <a href="https://sass-lang.com/documentation"
+                  >https://sass-lang.com/documentation</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post4">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post4">#</a>Week 4 | Flexbox
+            </h1>
+            <hr />
+            <h5>Date written: 2020-10-31</h5>
+          </header>
+          <p>
+            Flexbox is a great modern web technology that can be very powerful
+            for responsive design and efficient page layout, without any of the
+            complexity of calculating the size of objects using javascript. It
+            can arrange boxes based on different directions, different scaling,
+            filling, aligning, ordering, wrapping, with many other applications.
+            As a demonstration, here's a simple chart showing the different
+            types of barbecue sauce:
+          </p>
+          <div class="flex-container flex-demo-pad">
+            <div class="flex flex-style">
+              <p>
+                <img src="image/bbq-tomato.svg" alt="Tomato-Based" /><br />
+                <strong>Tomato based</strong>
+              </p>
+            </div>
+            <div class="flex flex-style">
+              <p>
+                <img src="image/bbq-vinegar.svg" alt="Vinegar-Based" /><br />
+                <strong>Vinegar based</strong>
+              </p>
+            </div>
+            <div class="flex flex-style">
+              <p>
+                <img src="image/bbq-mustard.svg" alt="Mustard-Based" /><br />
+                <strong>Mustard based</strong>
+              </p>
+            </div>
+          </div>
+          <p>
+            This chart is a flex container div, with divs inside of that
+            container that have the
+            <span class="text-monospace">flex-grow</span> property set to 1.
+            This makes it so that the boxes grow and shrink to have an even
+            amount of width between the three. Equally, you can add as many
+            boxes as you'd like, and it'd scale them proportionally. This can be
+            utilised in lots of ways, with the
+            <span class="text-monospace">flex-grow</span> property allowing
+            elements to have a scaling ratio. In these examples, all the
+            elements have an equal ratio, however it's possible to have two
+            boxes with largely different scales.
+          </p>
+          <div class="flex-container flex-demo-pad">
+            <div class="flex flex-style" style="flex-grow: 7">
+              <p><strong>Wide</strong></p>
+            </div>
+            <div class="flex flex-style" style="flex-grow: 1">
+              <p><strong>Thin</strong></p>
+            </div>
+          </div>
+          <p>
+            One of the most popular applications for flexbox is in HTML forms,
+            as it can be very useful for having multiple inputs on one line. In
+            this example, there's a username and a password field on the same
+            line, separated by a small gap. This can all be done in flexbox very
+            easily:
+          </p>
+          <form class="flex-demo-pad">
+            <div class="flex-container">
+              <div class="flex">
+                <label for="f1">Username</label><br />
+                <input id="f1" type="text" />
+              </div>
+              <div class="flex">
+                <label for="f2">Password</label><br />
+                <input id="f2" type="password" />
+              </div>
+            </div>
+            <div class="flex-container" style="flex-direction: row-reverse">
+              <button class="flex-demo-button" disabled>Submit</button>
+            </div>
+          </form>
+          <p>
+            Overall, I consider flexbox an essential skill. I've learned a small
+            amount about it during this course, but it's utility has always been
+            clear to me. I particularly like how useful it is for aligning
+            cards, as those are notorious for being difficult to size and
+            position when creating a responsive webpage. All of my knowledge of
+            flex comes from a single source, a wonderful guide hosted by
+            <a href="#4-1">CSS-TRICKS (2020)</a>.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="4-1">
+              <a class="anchor-marker" href="#4-1">#</a>
+              <p>
+                CSS-TRICKS, (2020). A Complete Guide to Flexbox. [online]
+                Available at:
+                <a
+                  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                  >https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post5">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post5">#</a>Week 5 | JavaScript &
+              TypeScript
+            </h1>
+            <hr />
+            <h5>Date Written: 2020-11-05</h5>
+          </header>
+          <p>
+            Much like Sass, TypeScript is a superset of JavaScript, whereby all
+            valid JavaScript is also valid TypeScript. It transcompiles into
+            pure JavaScript, affording the ease of working with static typing
+            and additional functionality. The primary differences between
+            JavaScript and TypeScript come about in the implementation of strong
+            typing with the latter <a href="#5-1">(TypeScript, 2020)</a>.
+          </p>
+          <p>
+            Strong typing involves defining what type a variable will use and
+            additionally prevents implicit type conversion, which is a large
+            part of why vanilla JavaScript is disliked. This strong typing looks
+            like this:
+          </p>
+          <pre><code class="lang-typescript">
+// JavaScript Approach
+let i = 64;
+
+// TypeScript Approach
+let i: int = 64;</code></pre>
+          <p>
+            This is an example of TypeScript's strong typing, enforcing a
+            variable type at assignment. On top of this, TypeScript allows for
+            custom types, using <code>type</code> and <code>interface</code>:
+          </p>
+          <pre><code class="lang-typescript">
+// types are objects that have a state based on values
+type DoorState = "open" | "closed";
+
+// interfaces are comprised of member objects
+interface User {
+  name: string;
+  id: number;
+}
+</code></pre>
+          <p>
+            These features can be essential for writing more complex systems, as
+            tranditional JavaScript can be quite clunky without any typing like
+            this <a href="#5-2">(rafpaf <i>et al.</i>, 2020)</a>.
+          </p>
+          <p>
+            Additionally, TypeScript allows for static typing, which changes the
+            definition from using instantiation to having a static value. While
+            TypeScript can handle instantiation (i.e. instances of), having the
+            additional static capability can be greatly useful in certain
+            applications. An example of this would be:
+          </p>
+          <pre><code class="lang-typescript">
+class Person {
+  static species: string = "Human";
+}
+</code></pre>
+          <p>
+            Using this example, it's clear to show that each Person object will
+            always have the species of "Human". It's static in that it won't
+            change based on instantiation
+            <a href="#5-3">(orta <i>et al.</i>, 2020)</a>.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="5-1">
+              <a class="anchor-marker" href="#5-1">#</a>
+              <p>
+                TypeScript, (n.d.). Typed JavaScript at Any Scale. [online]
+                Available at:
+                <a href="https://www.typescriptlang.org/"
+                  >https://www.typescriptlang.org/</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="5-2">
+              <a class="anchor-marker" href="#5-2">#</a>
+              <p>
+                rafpaf, zvakanaka, pragya91, orta, Ycmelon, davidbernegger,
+                (2020). TypeScript for JavaScript Programmers. [online]
+                Available at:
+                <a
+                  href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#defining-types"
+                  >https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#defining-types</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="5-3">
+              <a class="anchor-marker" href="#5-3">#</a>
+              <p>
+                orta, masonlouchart, chengwah1, (2020). Classes. [online]
+                Available at:
+                <a
+                  href="https://www.typescriptlang.org/docs/handbook/classes.html#static-properties"
+                  >https://www.typescriptlang.org/docs/handbook/classes.html#static-properties</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post6">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post6">#</a>Week 6 | JS Code
+              Highlighting
+            </h1>
+            <hr />
+            <h5>Date Written: 2020-11-14</h5>
+          </header>
+          <p>
+            This section is going to cover the code blocks used on this site.
+            I'm using the script Prism.js, a lightweight and modular syntax
+            highlighter. On top of this, I'm using a modified version of the
+            Tomorrow Night theme. This script looks for language classes within
+            <code>&lt;code&gt;</code> blocks. It then styles the elements inside
+            the block based on a language module
+            <a href="#6-1">(Golmote <i>et al.</i>, n.d.)</a>. For example:
+          </p>
+          <pre><code class="lang-rust">
+use apres::MIDI;
+use std::path::Path;
+
+fn main() {
+  let file_name = "Target-File.mid";
+  let path = Path::new(".").join(file_name);
+  println!("reading from {:?}!", path);
+  read_file(path);
+}</code></pre>
+          <p>
+            Above is a code snippet in the language Rust, a low-level language
+            occupying a similar space to C or C++. The snippet has coloured text
+            lining up with the elements in the code. To display this, I use the
+            following syntax:
+          </p>
+          <pre><code class="lang-html">
+&lt;pre&gt;&lt;code class="lang-rust"&gt;
+fn main() {
+  println!("Hello World");
+}
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+          <p>
+            The class <code>lang-rust</code> specifies what language is in the
+            code block, which controls the syntax highlighting and the language
+            readout in the top right. Prism also has extensions, including one
+            for the command line:
+          </p>
+          <pre
+            class="command-line lang-bash"
+            data-user="erin"
+            data-host="localhost"
+          ><code class="lang-bash">sudo apt update</code></pre>
+          <p>
+            This extension adds some extra flavour to the code block, while
+            still correctly highlighting the command as shell (or, more
+            specifically, bash). This is written as:
+          </p>
+          <pre><code class="lang-html">
+&lt;pre
+  class="command-line lang-bash"
+  data-user="erin"
+  data-host="localhost"
+&gt;
+  &lt;code class="lang-bash"&gt;
+    sudo apt update
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+          <p>
+            This functionality can be very useful for a blog like this, as it
+            lets me put code snippets right into the webpage without needing to
+            embed an iframe to a GitHub Gist or manually format the script.
+            Additionally, I can revise elements in the code tags, updating
+            what's there or adding or removing elements very easily. Finally,
+            the style that this afford is very useful, as I can easily change
+            the overall theme that the highlighting uses.
+          </p>
+          <p>
+            This shows how useful FOSS web-scripting can be, as there's always
+            going to be a module somewhere out there that does what you want,
+            and adapting them and utilising them can be half the battle in web
+            development. This will be expanded upon greatly in the next few
+            segments.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="6-1">
+              <a class="anchor-marker" href="#6-1">#</a>
+              <p>
+                Golmote <i>et al.</i>, (n.d.). Prism.js. [online] Available at:
+                <a href="https://prismjs.com/">https://prismjs.com/</a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post7">
+          <header>
+            <h1><a class="anchor-marker" href="#post7">#</a>Week 7 | jQuery</h1>
+            <hr />
+            <h5>Date Written: 2020-11-21</h5>
+          </header>
+          <p>
+            Although modern web development has largely abandoned jQuery in
+            favour of pure JS and other frameworks like React or Vue, jQuery
+            still has a presence, being used in web development and bundled
+            alongside popular libraries like Bootstrap v4.5.x (No longer true
+            for ^5.0.0) <a href="#7-1">(XhmikosR <i>et al.</i>, 2020)</a>.
+          </p>
+          <p>
+            jQuery is a useful library for "DOM Traversal and Manipulation",
+            Event Handling, and Ajax
+            <a href="#7-2">(dmethvin <i>et al.</i>, 2020)</a>, each of which
+            I'll describe below:
+          </p>
+          <h3>DOM Traversal and Manipulation</h3>
+          <p>
+            jQuery's most commonly used feature involves the easy selection of
+            DOM elements much like with CSS. Each DOM element on a page has an
+            element type, and can have a class, multiple classes, or an ID.
+          </p>
+          <pre><code class="lang-html">&lt;header class="header layout-top" id="main-header"&gt;&lt;/header&gt;</code></pre>
+          <p>
+            This element above has a few features that can make it very easy to
+            manipulate in CSS. These include the <code>header</code> element,
+            the <code>.header</code> and <code>.layout-top</code> classes, and
+            the <code>#main-header</code> id. A CSS file that manipulates these
+            values will look like this:
+          </p>
+          <pre><code class="lang-css">
+/* Semantic Element */
+header {
+  ...
+}
+
+/* Classes */
+.header {
+  ...
+}
+.layout-top {
+  ...
+}
+
+/* ID */
+#main-header {
+  ...
+}
+          </code></pre>
+          <p>
+            The selector that doesn't have any punctuation refers to the
+            semantic element of <code>header</code>, while the dot refers to
+            classes, and the hashtag/pound sign refers to an ID. The usefulness
+            of jQuery is that this functionality is preserved, allowing for the
+            following:
+          </p>
+          <pre><code class="lang-javascript">
+// Change the value based on a semantic element
+$("header").html("Welcome to the site");
+
+// Perform a function for each Class
+$(".header").each(function () { ... });
+
+// Hide the element based on ID
+$("#main-header").hide();
+          </code></pre>
+          <a href="#7-3">(jQuery, n.d.)</a>
+          <p>
+            This simple syntax makes jQuery very appealing for developers, as
+            having knowledge in CSS Selectors makes it very easy to implement
+            jQuery in a practical way.
+          </p>
+          <h3>Event Handling</h3>
+          <p>
+            jQuery can also be used to handle events, extending the basic
+            JavaScript event functionality. While PureJS events rely on HTML to
+            implement the event functionality, jQuery can add events to elements
+            based on selectors in the script. For example, two alternate methods
+            to implementing a click event for a button:
+          </p>
+          <pre><code class="lang-html">
+&lt;button onclick="click()" /&gt;
+          </code></pre>
+          <pre><code class="lang-javascript">
+$(button).on("click", function (event) { ... });
+          </code></pre>
+          <p>
+            While these are both functionally similar, jQuery implements this
+            without requiring any in-HTML event handling. This can be very
+            useful for maintaining clean code. Additionally, the quantity of
+            events that jQuery can handle is much greater than that of pure
+            HTML/JS, as signified by their documentation on the issue
+            <a href="#7-4">(jQuery, n.d.)</a>.
+          </p>
+          <h3>Ajax</h3>
+          <p>
+            Arguably the most useful side of jQuery is Ajax, a wrapper for HTTP
+            Requests. HTTP requests allow for sites to interact with other
+            servers easily, using various request methods to communicate
+            <a href="#7-5">(w3schools, n.d.)</a>. Usually HTTP requests are
+            confined to forms, and allow for clients and servers to interact.
+            Ajax exposes this functionality in a practical manner, allowing for
+            developers to perform asynchronous HTTP requests without the usage
+            of forms <a href="#7-6">(jQuery, n.d.)</a>.
+          </p>
+          <p>
+            I've implemented HTTP requests in my own projects commonly recently,
+            including an automation script for the university network and for
+            fetching repos from GitHub's REST API.
+          </p>
+          <p>
+            This function fetches all of the public repositories from my GitHub,
+            then converts them to JSON data ready for other scripts to display
+            the data on the page.
+          </p>
+          <pre><code class="lang-javascript">
+componentDidMount() {
+  fetch("https://api.github.com/users/summerysaturn/repos")
+    .then((res) => res.json())
+    .then((data) => {
+      this.setState({
+        restData: data,
+      });
+    });
+}
+          </code></pre>
+          <a
+            href="https://github.com/summerysaturn/summerysaturn.github.io/blob/5623c0644bf1debe75127964e9fa5b9e11de6ff0/src/index.js#L169-L177"
+            >Modified source code from my project, summerysaturn.github.io</a
+          >
+          <p>
+            This Bash script assigns a GET request to the variable $get, ready
+            for handling later on with a <code>grep</code>. This mimics a GET
+            request for loading a page, which assigns a SESSID cookie for the
+            POST request in the script later on.
+          </p>
+          <pre><code class="lang-bash">
+get=$(
+  curl -s -o /dev/null -D
+  - 'https://firewall-auth.brighton.ac.uk:6082/php/uid.php?vsys=1&rule=2'
+  -A 'WorldWideweb (NEXT)'
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+  -H 'accept-encoding: gzip, deflate, br'
+  -H 'accept-language: en-GB,en;q=0.5'
+  -H 'connection: keep-alive'
+  -H 'upgrade-insecure-requests: 1'
+)
+          </code></pre>
+          <a
+            href="https://github.com/summerysaturn/lyla-dotfiles/blob/6dd7c7063de50ab0a84dbde2f69ab462f4f5994c/scripts/uob-firewall#L3-L13"
+            >Modified source code from my project, lyla-dotfiles</a
+          >
+          <p>
+            Ajax allows for this functionality in JavaScript, without the
+            requirement of a large library like React (as above). This allows
+            for the same functionality to exist in a webpage. For example, the
+            jQuery documentation has a few example requests, including this one
+            <a href="#7-6">(jQuery, n.d.)</a>:
+          </p>
+          <pre><code class="lang-javascript">
+$.ajax({
+  url: "script.php",
+  method: "POST",
+  data: { id : menuId },
+  dataType: "html"
+});
+          </code></pre>
+          <p>
+            jQuery isn't strictly necessary for HTTP requests, as it's only a
+            wrapper <a href="#7-7">(You Don't Need jQuery!, 2014)</a>, but the
+            same is true for many of the things jQuery implements.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="7-1">
+              <a class="anchor-marker" href="#7-1">#</a>
+              <p>
+                XhmikosR <i>et al.</i>, (2020). Download - Bootstrap v4.5.
+                [online] Available at:
+                <a
+                  href="https://getbootstrap.com/docs/4.5/getting-started/download/"
+                >
+                  https://getbootstrap.com/docs/4.5/getting-started/download/
+                </a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="7-2">
+              <a class="anchor-marker" href="#7-2">#</a>
+              <p>
+                dmethvin <i>et al.</i>, (2020). jQuery. [online] Available at:
+                <a href="https://jquery.com/">https://jquery.com/</a> [Accessed
+                2020-12-17].
+              </p>
+            </div>
+            <div id="7-3">
+              <a class="anchor-marker" href="#7-3">#</a>
+              <p>
+                jQuery, (n.d.). jQuery Documentation - .each(). [online]
+                Available at:
+                <a href="https://api.jquery.com/each/">
+                  https://api.jquery.com/each/
+                </a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="7-4">
+              <a class="anchor-marker" href="#7-4">#</a>
+              <p>
+                jQuery, (n.d.). jQuery Documentation - Category: Events.
+                [online] Available at:
+                <a href="https://api.jquery.com/category/events/">
+                  https://api.jquery.com/category/events/
+                </a>
+                [Accessed 2020-12-17]
+              </p>
+            </div>
+            <div id="7-5">
+              <a class="anchor-marker" href="#7-5">#</a>
+              <p>
+                w3schools, (n.d.). HTTP Request Methods. [online] Available at:
+                <a href="https://www.w3schools.com/tags/ref_httpmethods.asp">
+                  https://www.w3schools.com/tags/ref_httpmethods.asp
+                </a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="7-6">
+              <a class="anchor-marker" href="#7-6">#</a>
+              <p>
+                jQuery, (n.d.). jQuery Documentation - jQuery.ajax(). [online]
+                Available at:
+                <a href="https://api.jquery.com/Jquery.ajax/">
+                  https://api.jquery.com/Jquery.ajax/
+                </a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+            <div id="7-7">
+              <a class="anchor-marker" href="#7-7">#</a>
+              <p>
+                You Don't Need jQuery!, (2014). Ajax Requests. [online]
+                Available at:
+                <a href="https://blog.garstasio.com/you-dont-need-jquery/ajax/">
+                  https://blog.garstasio.com/you-dont-need-jquery/ajax/
+                </a>
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post8">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post8">#</a> Week 8 | Node.js
+            </h1>
+            <hr />
+            <h5>Date Written: 2020-11-28</h5>
+          </header>
+          <div class="center">
+            <a href="https://nodejs.org/en/">
+              <img
+                src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg"
+                style="width: 30%"
+                alt="The Node.js Logo"
+              />
+            </a>
+          </div>
+          <p>
+            Node.js is an non-blocking JavaScript runtime that can be used to
+            build applications hosted on the web
+            <a href="#8-1">(XhmikosR <i>et al.</i>, 2020)</a>. What this means
+            is that it's an environment that can execute JavaScript much like a
+            web browser, without any of the web frontend that comes with a
+            regular browser <a href="#8-2">(Gibb, Robery, 2020)</a>. The
+            non-blocking part refers to how many connections can be handled
+            concurrently without holding up a thread
+            <a href="#8-2">(Capan, n.d.)</a>.
+          </p>
+          <p>
+            The primary utility of Node.js is on the server as a backend, as it
+            is primarily useful in how it handles connections concurrently. This
+            being said, I've found particular use for Node.js using package
+            managers like NPM and Yarn, as it can help to build applications
+            using frameworks like React.js and Electron.
+          </p>
+          <pre
+            class="command-line lang-bash"
+            data-user="erin"
+            data-host="localhost"
+          >
+            <code class="lang-bash">
+            node
+            </code>
+          </pre>
+          <pre><code class="lang-plain">
+Welcome to Node.js v14.15.0.
+Type ".help" for more information.
+></code></pre>
+          <p>
+            In the command line, Node.js can be utilised to execute JavaScript
+            easily as a scripting language, which is what NPM and Yarn both run
+            on <a href="#8-4">(Node.js, 2011)</a>. These package managers fetch
+            packages from the NPM Registry
+            <a href="#8-5">(w3schools, n.d.)</a> and install them either
+            globally or in the local directory. This can be used to set up
+            dependencies in a JavaScript project, allowing for easier sharing
+            and version management when compared with traditional solutions.
+          </p>
+          <p>
+            Each local directory that utilises Node.js has a
+            <code>package.json</code> file which includes details about the
+            package, along with the dependencies, license, repository, author,
+            etc. This information is very useful to include in the root of a
+            repository.
+          </p>
+          <pre><code class="lang-json">{
+  "name": "countdown-applet",
+  "version": "1.0.0",
+  "description": "A minimal Electron countdown app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.5.2",
+    "electron-reload": "^1.5.0"
+  },
+  "dependencies": {}
+}</code></pre>
+          <p>
+            <a
+              href="https://github.com/summerysaturn/countdown-applet/blob/master/package.json"
+              >Modified source code from my project, countdown-applet</a
+            >.
+          </p>
+          <p>
+            My primary utilisation of Node.js comes from the utilisation of a
+            few frameworks, including Electron, TypeScript, Sass, Webpack,
+            Bootstrap, and a few others.
+            <a href="https://www.electronforge.io/">Electron-Forge</a> is a
+            preset project that has all the dependencies needed to produce
+            Electron apps using Node. Electron itself is described in
+            <a href="#post11">Week 11's Article</a>.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="8-1">
+              <a class="anchor-marker" href="#8-1">#</a>
+              <p>
+                XhmikosR <i>et al.</i>, (2020). About Node.js®. [online]
+                Available at:
+                <a href="https://nodejs.org/en/about/"
+                  >https://nodejs.org/en/about/</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+
+            <div id="8-2">
+              <a class="anchor-marker" href="#8-2">#</a>
+              <p>
+                Gibb, Robert, (2020). What is Runtime? [online] Available at:
+                <a href="https://blog.stackpath.com/runtime/"
+                  >https://blog.stackpath.com/runtime/</a
+                >
+                [Accessed 2020-12-17].
+              </p>
+            </div>
+
+            <div id="8-3">
+              <a class="anchor-marker" href="#8-3">#</a>
+              <p>
+                Capan, Tomislav, (n.d.). Why The Hell Would I Use Node.js? A
+                Case-by-Case Tutorial. [online] Available at:
+                <a
+                  href="https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js"
+                  >https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js</a
+                >
+                [Accessed 2021-01-03].
+              </p>
+            </div>
+            <div id="8-4">
+              <a class="anchor-marker" href="#8-4">#</a>
+              <p>
+                Node.js. (2011). What is npm? [online] Available at:
+                <a
+                  href="https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/"
+                  >https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/</a
+                >
+                [Accessed 2021-01-03].
+              </p>
+            </div>
+            <div id="8-5">
+              <a class="anchor-marker" href="#8-5">#</a>
+              <p>
+                w3schools. (n.d.). What is npm? [online] Available at:
+                <a href="https://www.w3schools.com/whatis/whatis_npm.asp"
+                  >https://www.w3schools.com/whatis/whatis_npm.asp</a
+                >
+                [Accessed 2021-01-04].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post9">
+          <header>
+            <h1><a class="anchor-marker" href="#post9">#</a> Week 9 | React</h1>
+            <hr />
+            <h5>Date Written: 2020-12-05</h5>
+          </header>
+
+          <div class="center center-dark">
+            <a href="https://reactjs.org/">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                style="width: 20%"
+                alt="The ReactJS Logo"
+              />
+            </a>
+          </div>
+          <p>
+            ReactJS is a JavaScript library designed around component-based UI
+            <a href="#9-1">(Facebook, 2021)</a>. It's unique in that it has a
+            specific method of rendering elements, differing greatly from
+            traditional web design. This is difficult to learn, however it
+            affords ReactJS a lot of versatility and performance.
+          </p>
+          <p>
+            A major part of this element style relate to Component Props and
+            Component State. The diagram below illustrates this:
+          </p>
+          <div class="center">
+            <img
+              src="image/react-state.jpg"
+              alt="ReactJS Component State Diagram"
+              style="width: 70%"
+            />
+          </div>
+          <a href="#9-2">(Holla, n.d.)</a>
+          <p>
+            Props are passed down from parent elements, whereas State is
+            self-referential for each component. This data flow outlines how
+            components affect each other, and how parent elements have priority
+            over child elements. Additionally, state can be used to affect how a
+            component renders, by re-rendering whenever state changes
+            <a href="#9-2">(Holla, n.d.)</a>.
+          </p>
+          <div class="center">
+            <img
+              src="image/react-lifecycle.jpg"
+              alt="ReactJS Component Lifecycle Diagram"
+              style="width: 70%"
+            />
+          </div>
+          <a href="#9-3">(Holla, n.d.)</a>
+          <p>
+            Additionally, each component has a large amount of callbacks
+            relating to it's own lifecycle, allowing for lots of granularity
+            over what a component should do at each point in the lifecycle. This
+            can have many practical implications
+            <a href="#9-3">(Holla, n.d.)</a>.
+          </p>
+          <pre><code class="lang-js">
+class ClassComponentExample extends React.Component {
+   constructor(props){
+       super(props);
+       console.log('Constructor State')
+       this.state = {
+           messageB1:"Default Message B - 1",
+           messageB2:"Default Message B - 2",
+       }
+   }
+   render() {
+       console.log('Render State')
+       return &lt;div&gt;&lt;h1&gt;{this.props.message}&lt;/h1&gt;
+           &lt;h1&gt;{this.state.messageB1}&lt;/h1&gt;
+           &lt;h1&gt;{this.state.messageB2}&lt;/h1&gt;
+           &lt;button onclick="{this.b1OnClick}"&gt;B1 Button&lt;/button&gt;
+           &lt;button onclick="{this.b2OnClick}"&gt;B2 Button&lt;/button&gt;
+       &lt;/div&gt;
+   }
+}
+          </code></pre>
+          <a href="#9-3">Modified source code from Holla (n.d.)</a>
+          <p>
+            ReactJS is far too complex to sum up in this blog, but this should
+            be a decent starting point. ReactJS is something I've used in a
+            couple of projects already, and it's a useful skill for the
+            industry, as it runs a fair amount of the modern web. Facebook
+            itself is written on React, explaining why Facebook is cited for
+            this article.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="9-1">
+              <a class="anchor-marker" href="#9-1">#</a>
+              <p>
+                Facebook. (2021). React? [online] Available at:
+                <a href="https://reactjs.org/">https://reactjs.org/</a>
+                [Accessed 2021-01-04].
+              </p>
+            </div>
+            <div id="9-2">
+              <a class="anchor-marker" href="#9-2">#</a>
+              <p>
+                Holla, Suhas, (n.d.). Chapter 5 – ReactJS Component State
+                [online] Available at:
+                <a
+                  href="https://www.techdiagonal.com/reactjs_courses/beginner/reactjs-component-state/"
+                  >https://www.techdiagonal.com/reactjs_courses/beginner/reactjs-component-state/</a
+                >
+                [Accessed 2021-01-04].
+              </p>
+            </div>
+            <div id="9-3">
+              <a class="anchor-marker" href="#9-3">#</a>
+              <p>
+                Holla, Suhas, (n.d.). Chapter 6 – React Component Lifecycle with
+                Example [online] Available at:
+                <a
+                  href="https://www.techdiagonal.com/reactjs_courses/beginner/chapter-6-react-component-lifecycle-with-example/"
+                  >https://www.techdiagonal.com/reactjs_courses/beginner/chapter-6-react-component-lifecycle-with-example/</a
+                >
+                [Accessed 2021-01-04].
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post10">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post10">#</a> Week 10 | WebPack
+            </h1>
+            <hr />
+            <h5>Date Written: 2020-12-12</h5>
+          </header>
+          <p>
+            With the internet getting larger and larger, technologies aiming to
+            cut down on extraneous data usage are essential. The speed at which
+            a page loads is largely dictated by the optimisation put into the
+            webpage design. Webpack aims to solve an issue where many files are
+            sent when a page is loaded due to dependencies, instead packaging
+            all the dependencies for a page into a smaller payload.
+          </p>
+          <p>
+            Webpack functions by identifying the usage of modules and
+            dependencies in your JavaScript, CSS, Sass, etc., and packages them
+            all into a minified file that they call a Static Asset. These assets
+            are delineated by type, including JavaScript, CSS, and images.
+          </p>
+          <div class="center">
+            <img
+              src="image/webpack-diagram.png"
+              alt="A diagram of how webpack works"
+            />
+          </div>
+          <p>
+            <a href="#10-1">(Webpack, n.d.)</a>
+          </p>
+          <p>
+            I'm using this in my modern Node/Electron projects, as Electron
+            Forge includes Webpack as an option natively
+            <a href="#10-2">(Electron Forge, n.d.)</a>. The ease of webpack
+            comes from how you can drop it into an existing Node project, set it
+            up, then forget about it; it's effectively free optimisation,
+            provided that no issues come up.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="10-1">
+              <a class="anchor-marker" href="#10-1">#</a>
+              <p>
+                Webpack, (n.d.). bundle your assets [online] Available at:
+                <a href="https://webpack.js.org/">https://webpack.js.org/</a>
+                [Accessed 2021-01-04].
+              </p>
+            </div>
+            <div id="10-2">
+              <a class="anchor-marker" href="#10-2">#</a>
+              <p>
+                Electron Forge, (n.d.). Webpack [online] Available at:
+                <a
+                  href="https://www.electronforge.io/templates/webpack-template"
+                  >https://www.electronforge.io/templates/webpack-template</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="post11">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#post11">#</a> Week 11 | Electron
+            </h1>
+            <hr />
+            <h5>Date Written: 2020-12-19</h5>
+          </header>
+          <div class="center">
+            <a href="https://www.electronjs.org/">
+              <img src="image/electron.png" alt="Electronjs Banner Image" />
+            </a>
+          </div>
+          <p>
+            Electron is a framework originally designed for the text editor
+            Atom, having evolved since it's 1.0 release in 2014
+            <a href="#11-1">(Marcin and Olga, 2020)</a>. The framework is now
+            utilised by many different applications, including Slack and Visual
+            Studio Code <a href="11-2">(Electron, n.d.)</a>. The utility of
+            Electron comes from how it allows for you to create a desktop
+            application using HTML, CSS and Javascript, being a Node package
+            <a href="#11-1">(Marcin and Olga, 2020)</a>.
+          </p>
+          <p>
+            Electron solves an issue in the programming industry whereby good
+            cross-platform UI Frameworks are hard to get ahold of. This issue is
+            solved in Electron by effectively shipping a web application as a
+            desktop app, one of the few things that are easy to use and react
+            consistently regardless of host operating system; Windows relies
+            upon it's own UI library
+            <a href="#11-3">(Bridge, Schofield, 2020)</a>, MacOS has a couple
+            <a href="#11-4">(Apple, n.d.)</a> <a href="#11-5">(Apple, n.d.)</a>,
+            and Linux has multiple frameworks <a href="11-7">(Gnome, 2021)</a>
+            <a href="11-8">(The QT Company, 2020)</a>. Electron sidesteps this
+            issue entirely, having everything rendered entirely as a webpage.
+          </p>
+          <p>
+            Electron has drawn criticism around utilising the web stack for
+            general purpose GUI, replacing those native UI toolkits that work
+            with low level languages. The fact that every instance of an
+            electron app is a whole browser instance affects performance in a
+            big way, with Electron apps being notorious for using lots of memory
+            and being far less performant than a binary application
+            <a href="#11-10">(Rory, 2017)</a> <a href="11-11">(Ohno, 2018)</a>.
+          </p>
+          <p>
+            I personally understand the concerns about Electron and utilise it
+            in spite of that, as it's a very accessible framework for someone
+            used to front-end web design. In the future I might learn something
+            like GTK, however for now, Electron is useful for app development.
+          </p>
+          <h4>Article References</h4>
+          <div class="bibliography">
+            <div id="11-1">
+              <a class="anchor-marker" href="#11-1">#</a>
+              <p>
+                Dryka, Marcin and Gierszal, Olga, (2020). What Is Electron.js?
+                [online] Available at:
+                <a href="https://brainhub.eu/library/what-is-electron-js/"
+                  >https://brainhub.eu/library/what-is-electron-js/</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-2">
+              <a class="anchor-marker" href="#11-2">#</a>
+              <p>
+                Electron, (n.d.). Electron. [online] Available at:
+                <a href="https://www.electronjs.org/"
+                  >https://www.electronjs.org/</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-3">
+              <a class="anchor-marker" href="#11-3">#</a>
+              <p>
+                Bridge, Karl and Schofield, McLean, (2020). Windows UI Library
+                2.x [online] Available at:
+                <a
+                  href="https://docs.microsoft.com/en-us/windows/apps/winui/winui2/"
+                  >https://docs.microsoft.com/en-us/windows/apps/winui/winui2/</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-4">
+              <a class="anchor-marker" href="11-4">#</a>
+              <p>
+                Apple, (n.d.). AppKit. [online] Available at:
+                <a href="https://developer.apple.com/documentation/appkit"
+                  >https://developer.apple.com/documentation/appkit</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-5">
+              <a class="anchor-marker" href="11-5">#</a>
+              <p>
+                Apple, (n.d.). AppKit. [online] Available at:
+                <a href="https://developer.apple.com/documentation/appkit"
+                  >https://developer.apple.com/documentation/appkit</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-6">
+              <a class="anchor-marker" href="11-6">#</a>
+              <p>
+                Apple, (n.d.). UIKit. [online] Available at:
+                <a href="https://developer.apple.com/documentation/uikit"
+                  >https://developer.apple.com/documentation/uikit</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-7">
+              <a class="anchor-marker" href="11-7">#</a>
+              <p>
+                GNOME, (2021). GTK v4.0.0. [online] Available at:
+                <a href="https://www.gtk.org/">https://www.gtk.org/</a>
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-8">
+              <a class="anchor-marker" href="11-8">#</a>
+              <p>
+                The QT Company, (2020). UIKit. [online] Available at:
+                <a href="https://www.qt.io/">https://www.qt.io/</a>
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-9">
+              <a class="anchor-marker" href="11-9">#</a>
+              <p>
+                Rory, (2017). Electron memory usage compared to other
+                cross-platform frameworks. [online] Available at:
+                <a
+                  href="http://roryok.com/blog/2017/08/electron-memory-usage-compared-to-other-cross-platform-frameworks/"
+                  >http://roryok.com/blog/2017/08/electron-memory-usage-compared-to-other-cross-platform-frameworks/</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+            <div id="11-10">
+              <a class="anchor-marker" href="11-10">#</a>
+              <p>
+                Ohno, John, (2018). The problem with Electron. [online]
+                Available at:
+                <a
+                  href="https://hackernoon.com/the-problem-with-electron-162a70c3b29f"
+                  >https://hackernoon.com/the-problem-with-electron-162a70c3b29f</a
+                >
+                [Accessed 2021-01-06]
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--
+
+          The deadline for this project is on the 13th, therefore only 15 weeks (articles) are necessary. The 16th would go past the date of the 13th (15th Jan) and therefore isn't included.
+
+        -->
+
+        <article id="references">
+          <header>
+            <h1>
+              <a class="anchor-marker" href="#references">#</a> Site References
+            </h1>
+            <hr />
+          </header>
+          <div class="lg-dropdown-content">
+            <div class="bibliography">
+              <div id="b-1">
+                <a class="anchor-marker" href="#b-1">#</a>
+                <p>
+                  w3schools, (n.d.). HTML &lt;meta&gt; Tag. [online] Available
+                  at:
+                  <a href="https://www.w3schools.com/tags/tag_meta.asp"
+                    >https://www.w3schools.com/tags/tag_meta.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-2">
+                <a class="anchor-marker" href="#b-2">#</a>
+                <p>
+                  w3schools, (n.d.). Responsive Web Design - Grid-View. [online]
+                  Available at:
+                  <a href="https://www.w3schools.com/css/css_rwd_grid.asp"
+                    >W3Schools - Grid View CSS</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-3">
+                <a class="anchor-marker" href="#b-3">#</a>
+                <p>
+                  w3schools, (n.d.). Responsive Web Design - Media Queries.
+                  [online] Available at:
+                  <a
+                    href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
+                    >https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-4">
+                <a class="anchor-marker" href="#b-4">#</a>
+                <p>
+                  Taylor, M.J., (2007). How to keep footers at the bottom of the
+                  page. [online] Accessed at:
+                  <a href="https://matthewjamestaylor.com/bottom-footer"
+                    >https://matthewjamestaylor.com/bottom-footer</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-5">
+                <a class="anchor-marker" href="#b-5">#</a>
+                <p>
+                  w3schools, (n.d.). HTML Forms. [online] Available at:
+                  <a href="https://www.w3schools.com/html/html_forms.asp"
+                    >https://www.w3schools.com/html/html_forms.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-6">
+                <a class="anchor-marker" href="#b-6">#</a>
+                <p>
+                  peterbe, hamishwillee, (2020). The HTML5 input types. [online]
+                  Available at:
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types"
+                    >https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_type</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-7">
+                <a class="anchor-marker" href="#b-7">#</a>
+                <p>
+                  w3schools, (n.d.). CSS justify-content Property. [online]
+                  Available at:
+                  <a
+                    href="https://www.w3schools.com/csSref/css3_pr_justify-content.asp"
+                    >https://www.w3schools.com/csSref/css3_pr_justify-content.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-8">
+                <a class="anchor-marker" href="#b-8">#</a>
+                <p>
+                  Coyier, Christ, (2018). Truncate String with Ellipsis.
+                  [online] Available at:
+                  <a
+                    href="https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/"
+                    >CSS-Tricks - Truncate strings with ellipsis</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-9">
+                <a class="anchor-marker" href="#b-9">#</a>
+                <p>
+                  Google, (n.d.). Google Fonts Documentation. [online] Available
+                  at:
+                  <a href="https://developers.google.com/fonts/"
+                    >https://developers.google.com/fonts/</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-10">
+                <a class="anchor-marker" href="#b-10">#</a>
+                <p>
+                  peterbe, (2020). Mozilla MDN web docs: box-sizing. [online]
+                  Available at:
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"
+                    >https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-11">
+                <a class="anchor-marker" href="#b-11">#</a>
+                <p>
+                  metatags.io, (2020). Meta Tags. [online] Available at:
+                  <a href="https://metatags.io/">https://metatags.io/</a>
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-12">
+                <a class="anchor-marker" href="#b-12">#</a>
+                <p>
+                  w3schools, (n.d.). How TO - Smooth Scroll. [online] Available
+                  at:
+                  <a
+                    href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2"
+                    >https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-13">
+                <a class="anchor-marker" href="#b-13">#</a>
+                <p>
+                  Node.js, (2020). Logo Downloads. [online] Available at:
+                  <a href="https://nodejs.org/en/about/resources/"
+                    >https://nodejs.org/en/about/resources/</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-14">
+                <a class="anchor-marker" href="#b-14">#</a>
+                <p>
+                  mononym <i>et al.</i>, (2012). Outline radius? (Answer).
+                  [online] Available at:
+                  <a href="https://stackoverflow.com/a/11426967"
+                    >https://stackoverflow.com/a/11426967</a
+                  >
+                  [Accessed 2020-12-17]
+                </p>
+              </div>
+              <div id="b-15">
+                <a class="anchor-marker" href="#b-15">#</a>
+                <p>
+                  theredforest, (2017). CSS Auto hide elements after 5 seconds
+                  (Answer). [online] Available at:
+                  <a href="https://stackoverflow.com/a/43397509"
+                    >https://stackoverflow.com/a/43397509</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-16">
+                <a class="anchor-marker" href="#b-16">#</a>
+                <p>
+                  w3schools, (n.d.). onclick Event. [online] Available at:
+                  <a href="https://www.w3schools.com/jsref/event_onclick.asp"
+                    >https://www.w3schools.com/jsref/event_onclick.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+              <div id="b-17">
+                <a class="anchor-marker" href="#b-17">#</a>
+                <p>
+                  w3schools, (n.d.). JavaScript Popup Boxes. [online] Available
+                  at:
+                  <a href="https://www.w3schools.com/js/js_popup.asp"
+                    >https://www.w3schools.com/js/js_popup.asp</a
+                  >
+                  [Accessed 2020-12-17].
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <footer>
+        <a href="https://summerysaturn.github.io/"> My GitHub </a>
+        <span class="text-muted">|</span>
+        <a href="https://github.com/summerysaturn/y1-university">
+          Site Source Code
+        </a>
+        <span class="text-muted">|</span>
+        <a href="https://github.com/summerysaturn/y1-university/issues/7">
+          GitHub Issue
+        </a>
+        <span class="text-muted">|</span>
+        <a href="https://github.com/summerysaturn/y1-university/issues/new">
+          Create an Issue
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

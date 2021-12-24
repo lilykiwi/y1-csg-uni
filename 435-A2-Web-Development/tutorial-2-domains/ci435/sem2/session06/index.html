@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>435A2 | summerysaturn | Week 6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="scripts/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Session 6</li>
+        </ol>
+
+        <a class="btn btn-primary" href="../index.html" role="button"
+          >Homepage</a
+        >
+      </nav>
+
+      <h1 class="mt-5">435A2 Session 6</h1>
+      <p>
+        This document is a scripting exercise! Click the buttons to run the
+        scripts.
+      </p>
+
+      <h2 class="mt-5">Question 1</h2>
+
+      <p>
+        Write a function called multiply that takes two arguments (a, b) and
+        returns the result of multiplying those arguments together. Use the new
+        function to log to the console the result of multiplying two numbers,
+        e.g. 354 * 875 and 9876.543 * 765.123.
+      </p>
+      <p>
+        Try calling function multiply with one parameter or three parameters
+        instead of the required two parameters and log the result to the
+        console. What happens? How does JavaScript handle missing or surplus
+        parameters? Research the special values undefined and NaN.
+      </p>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(1)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-1" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 2</h2>
+
+      <p>
+        Write a function called countChar that counts how often a character c
+        occurs in a string s. The function takes two arguments (s and c) and
+        returns a number. Use the new function to log to the console the number
+        of times the character 'l' occurs in the word 'Hello'. HINT: since we
+        are looking for a single character, we can use the String.charAt()
+        method
+      </p>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(2)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-2" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 3</h2>
+
+      <p>
+        Write a function called countStr that counts how often a search string
+        needle occurs in a string haystack. The function takes two string
+        arguments and returns a number. Use the new function to log to the
+        console
+      </p>
+      <ol>
+        <li>
+          the number of times the string 'cream' occurs in the string 'I scream,
+          you scream, we all scream for icecream!'
+        </li>
+        <li>
+          the number of times the string 'sea' occurs in the string 'She sells
+          sea shells on the sea shore. The shells that she sells are sea shells
+          I'm sure. So if she sells sea shells on the sea shore, I'm sure that
+          the shells are sea shore shells'
+        </li>
+      </ol>
+      <p>
+        HINT: since we are looking for a string with multiple characters, we
+        cannot use the String.charAt() method. Instead, try the String.indexOf()
+        method and use the second parameter to control the start index for the
+        search after each find. This is a tricky problem, so don't despair if
+        things don't work out immediately.
+      </p>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(3)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-3" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 4</h2>
+
+      <p>
+        Write a function called rotate that takes two arguments (arr, an array,
+        and num, a number), which will modify the arr array by popping an
+        element off the last element and splicing it at the start of the array.
+        This should be repeated num times, effectively rotating the array. For
+        example:
+        <code
+          >rotate(["Harry","Sarah","Oscar","Tina"], 2) ->
+          ["Oscar","Tina","Harry","Sarah"];</code
+        >
+      </p>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(4)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-4" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 5</h2>
+
+      <p>
+        Sort the array [12, 9, 33, 8, 71, 2, 41, 5] first in alphabetical order,
+        then in ascending and in descending numerical order, each time logging
+        the result to the console. Use anonymous functions as arguments to the
+        Array.sort() method for the numerical sorts.
+      </p>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(5)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-5" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <div style="height: 50vh"></div>
+    </div>
+  </body>
+</html>

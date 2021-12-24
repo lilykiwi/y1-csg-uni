@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>435A2 | summerysaturn | Week 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="scripts/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Session 3</li>
+        </ol>
+
+        <a class="btn btn-primary" href="../index.html" role="button"
+          >Homepage</a
+        >
+      </nav>
+
+      <h1 class="mt-5">435A2 Session 3</h1>
+      <p>
+        This document is a scripting exercise! Click the buttons to run the
+        scripts.
+      </p>
+
+      <h2 class="mt-5">Question 1</h2>
+      <ol>
+        <li>
+          Print to the console first the expression (1 == true) and then the
+          expression (1 === true). Note the difference between using the simple
+          and strict comparison operators == and ===.
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(1)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-1" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 2</h2>
+      <ol>
+        <li>Define two variables x and y and initialise them to 3 and 5.</li>
+        <li>
+          Print to the console the following expressions:
+          <ul>
+            <li>x less or equal to y</li>
+            <li>x greater than 4 and y greater than 4</li>
+            <li>x greater than 4 or y greater than 4</li>
+            <li>not (x greater than 4 or y greater than 4)</li>
+            <li>x not equal y and y greater than 0</li>
+            <li>x times y less than 15</li>
+            <li>x times y equal or less than 15</li>
+          </ul>
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(2)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-2" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 3</h2>
+
+      <ol>
+        <li>
+          Use an if statement that tests whether x is greater than y and then
+          prints either "x is greater than y" or "x is less than or equal to y"
+          to the console.
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(3)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-3" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 4</h2>
+      <ol>
+        <li>Log the result of dividing x by y only if x is greater than y</li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(4)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-4" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 5</h2>
+
+      <ol>
+        <li>
+          Add x to y while y is less than 100, then log the value of y to the
+          console
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(5)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-5" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 6</h2>
+
+      <ol>
+        <li>
+          Log the string "Hello [number]" to the console y times (i.e. Hello 1,
+          Hello 2, Hello 3 ....)
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(6)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-6" style="white-space: pre-line"></code>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Question 7</h2>
+
+      <ol>
+        <li>
+          Define a variable day and initialise it to a random number between 0
+          and 6
+        </li>
+        <li>
+          use a switch statement to test the value of day and print a
+          corresponding day of the week to the console
+        </li>
+        <li>
+          Hint: use the following expression to generate a random number between
+          0 and 6: var day = Math.floor(Math.random() * 7);
+        </li>
+      </ol>
+
+      <button class="btn btn-primary mb-2 mt-2" onclick="main(7)">
+        Run Script &#8227;
+      </button>
+      <div class="card">
+        <div class="card-header">Output:</div>
+        <div class="card-body font-monospace">
+          <code id="out-7" style="white-space: pre-line"></code>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 50vh"></div>
+  </body>
+</html>

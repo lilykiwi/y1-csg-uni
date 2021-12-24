@@ -1,0 +1,505 @@
+/*
+* Global
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 18px;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  box-sizing: border-box;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.text-muted {
+  color: grey;
+}
+
+.text-muted a {
+  text-decoration: underline;
+}
+
+/*
+* Sidebar
+*/
+
+nav {
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1px 0 1px 0; /* For some reason 0px makes this look weird */
+}
+
+.img-box {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar h3 {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+nav a {
+  display: block;
+  color: white !important;
+  padding: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-box {
+  border-radius: 5px;
+  margin: 0 1rem 1rem 1rem;
+  background-color: #353b46;
+}
+
+.nav-indent {
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.nav-active {
+  background-image: linear-gradient(to right, #ca6351, #ca5b6d);
+}
+
+/*
+* Body
+*/
+
+main {
+  padding: 0 2rem 2rem 2rem;
+  text-align: justify;
+}
+
+/*
+* Articles
+*/
+
+header {
+  position: relative;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 0;
+  padding: 2rem 0 1rem 0;
+}
+
+header hr {
+  height: 2px;
+  background-image: linear-gradient(to right, #cf9050, #db84d7);
+  border: 0;
+}
+
+header h5 {
+  color: #888;
+}
+
+article a {
+  background: linear-gradient(to right, #cf9050, #db84d7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+.terminal-ul {
+  font-family: "Fira Code", monospace;
+  background-image: linear-gradient(to right, #ebd0cc, #f0ced3);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.25rem;
+  text-align: initial;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.center-dark {
+  background: #30343f;
+  border-radius: 0.25rem;
+  padding: 2rem 0;
+}
+
+.image-placeholder-square {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+mark {
+  display: inline-block;
+  color: inherit;
+  border: 1px solid #000;
+}
+
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative; /* If you want text inside of it */
+  margin-bottom: 4px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-margin {
+  margin-bottom: 2rem;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  background-color: #eee;
+  border-radius: 0.25rem;
+  margin: 4px;
+}
+
+article h3 {
+  margin-top: 0;
+  position: relative;
+}
+
+.anchor-marker {
+  position: absolute;
+  font-size: 1.5rem;
+  left: -1.5rem;
+  opacity: 0.5;
+}
+
+.bibliography {
+  text-align: left;
+}
+
+.bibliography div {
+  margin: 1rem 0;
+  position: relative;
+  pointer-events: none;
+}
+
+.bibliography div > * {
+  pointer-events: all;
+}
+
+.bibliography p {
+  margin: 0;
+}
+
+.bibliography > :target:before,
+article section:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+  pointer-events: none;
+}
+
+.bibliography > :target > p {
+  position: relative;
+}
+
+.bibliography > :target > p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -32px;
+  right: -8px;
+  border-radius: 16px;
+  border: 2px dashed #e7835b;
+  -webkit-animation: fadeOut 5s forwards;
+  animation: fadeOut 5s forwards;
+  z-index: -1;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/*
+* Flexbox
+*/
+
+.flex-demo-pad {
+  margin: 2rem 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex {
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.flex input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.flex img {
+  width: 30%;
+  padding-bottom: 0.5rem;
+}
+
+.flex-style {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.flex-demo-button {
+  margin: 0 1rem;
+  height: 2rem;
+}
+
+/*
+* Form
+*/
+
+form {
+  width: 100%;
+}
+
+form label {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+form textarea {
+  resize: vertical;
+  padding: 1%;
+  height: 8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/*
+* Footer
+*/
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  word-wrap: break-word;
+}
+
+main {
+  padding: 0 1rem 6rem 1rem;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+/*
+* Breakpoints reference from
+* https://getbootstrap.com/docs/4.5/layout/overview/
+*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 372px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-container {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar {
+    padding-bottom: 2rem !important;
+    width: 100vw;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-container {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar {
+    padding-bottom: 2rem !important;
+    width: 100vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidebar {
+    width: 264px;
+    position: fixed;
+    height: 100vh;
+    padding: 0 !important;
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .wrapper {
+    margin-left: 264px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar {
+    width: 264px;
+    position: fixed;
+    height: 100vh;
+    padding: 0 !important;
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 638px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .wrapper {
+    margin-left: 264px;
+  }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 264px;
+    position: fixed;
+    height: 100vh;
+    padding: 0 !important;
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .wrapper {
+    margin-left: 264px;
+  }
+}

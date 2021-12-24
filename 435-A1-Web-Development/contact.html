@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      https://www.w3schools.com/tags/tag_meta.asp
+    -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Charlotte Ward" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generic.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+
+    <!-- Primary Meta Tags -->
+    <title>Charlotte Ward 435-A1 Project Site</title>
+    <meta name="title" content="Charlotte Ward 435-A1 Project Site" />
+    <meta
+      name="description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Charlotte Ward 435-A1 Project Site" />
+    <meta
+      property="og:description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Charlotte Ward 435-A1 Project Site"
+    />
+    <meta
+      property="twitter:description"
+      content="Computer Science for Games | The website for my CI435 assignment, outlining what I've learned over the module so far."
+    />
+
+    <!-- Fira Code font from Google Fonts API -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-container">
+        <div class="img-box">
+          <img src="image/mask-2-colour.png" alt="Sidebar Logo" />
+        </div>
+        <h3>Lottie's Page</h3>
+
+        <nav id="navbar" class="nav">
+          <div class="nav-box">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="nav-box">
+            <a href="tutorial.html">Study Tips</a>
+          </div>
+          <div class="nav-box nav-active">
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <main class="container">
+        <article>
+          <header id="post1">
+            <h1><a class="anchor-marker" href="#post1">#</a> Contact Me</h1>
+            <hr />
+          </header>
+
+          <p>
+            This is a non-functional example form for a support ticket. If you
+            have any criticism or need to contact me, try the link below. If you
+            do add an issue here, please add the CI435 (Web Dev) label. Thanks!
+          </p>
+
+          <a href="https://github.com/summerysaturn/y1-university/issues/new">
+            Create an Issue
+          </a>
+
+          <form id="form" class="flex-demo-pad">
+            <div class="flex-container">
+              <div class="flex" style="flex-grow: 2">
+                <label for="f1">Email</label><br />
+                <input id="f1" type="email" form="form" />
+              </div>
+              <div class="flex" style="flex-grow: 3">
+                <label for="f2">Password</label><br />
+                <input id="f2" type="password" form="form" />
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="flex" style="flex-grow: 4">
+                <label for="f3">Username</label><br />
+                <input id="f3" type="text" form="form" />
+              </div>
+              <div class="flex" style="flex-grow: 2">
+                <label for="f4">Region</label><br />
+                <select id="f4" form="form">
+                  <option>Select...</option>
+                  <option value="europe">Europe</option>
+                  <option value="us">US</option>
+                  <option value="asia">Asia</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="flex">
+                <label for="f5">Comment</label><br />
+                <textarea id="f5" form="form"></textarea>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="flex">
+                <label>Attachment</label>
+                <input type="file" form="form" />
+              </div>
+              <button
+                class="flex-demo-button"
+                onclick="window.alert('Form Submitted! [dummy text]');"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </article>
+      </main>
+      <footer>
+        <div class="container">
+          <a href="https://summerysaturn.github.io/"> My GitHub </a>
+          <span class="text-muted">|</span>
+          <a href="https://github.com/summerysaturn/y1-university">
+            Site Source Code
+          </a>
+          <span class="text-muted">|</span>
+          <a href="https://github.com/summerysaturn/y1-university/issues/7">
+            GitHub Issue
+          </a>
+          <span class="text-muted">|</span>
+          <a href="https://github.com/summerysaturn/y1-university/issues/new">
+            Create an Issue
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

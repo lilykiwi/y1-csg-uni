@@ -1,0 +1,722 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="custom.css">
+<div class="container">
+<h1 id="ci405-a2-notebook">CI405 A2 notebook</h1>
+<p>Charlotte Ward | CI405 Assignment 2 | Year 1 CSG</p>
+<ul>
+<li><a href="#ci405-a2-notebook">CI405 A2 notebook</a>
+<ul>
+<li><a href="#week-1-questions">Week 1 Questions</a></li>
+<li><a href="#week-1-lab-work">Week 1 Lab Work</a>
+<ul>
+<li><a href="#step-0-downloads">Step 0: Downloads</a></li>
+<li><a href="#step-1-creating-a-vm-and-allocating-resources">Step 1: Creating a VM and allocating resources</a></li>
+<li><a href="#step-2-install-the-operating-system-using-the-iso">Step 2: Install the operating system using the ISO</a></li>
+<li><a href="#step-3-create-a-user-account-and-apply-updates">Step 3: Create a user account and apply updates</a></li>
+</ul></li>
+<li><a href="#week-2-questions">Week 2 Questions</a></li>
+<li><a href="#week-2-lab-work">Week 2 Lab Work</a></li>
+<li><a href="#week-3-questions">Week 3 Questions</a></li>
+<li><a href="#week-3-lab-work">Week 3 Lab Work</a></li>
+<li><a href="#week-4-questions">Week 4 Questions</a></li>
+<li><a href="#week-4-lab-work">Week 4 Lab Work</a></li>
+<li><a href="#week-5-questions">Week 5 Questions</a></li>
+<li><a href="#week-5-lab-work">Week 5 Lab Work</a></li>
+<li><a href="#week-7-questions">Week 7 Questions</a></li>
+<li><a href="#week-7-lab-work">Week 7 Lab Work</a></li>
+<li><a href="#week-8-questions">Week 8 Questions</a></li>
+<li><a href="#week-8-lab-work">Week 8 Lab Work</a></li>
+</ul></li>
+</ul>
+<h2 id="week-1-questions">Week 1 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Define the four main components of a computer.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Input, Processor, Memory, Output.</p>
+<p>Other components can be added in to optimise this, but the core concept of a computer (vs. a Turing machine or similar) revolves around Input and Output.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Explain the difference between a fixed program computer and a stored program computer.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Fixed program computers have a set operation and control flow, whereas stored program computers can be modified before, during and after execution. Fixed program computers can be very simple and cheap, whereas stored program computers are more complex but more versatile. Most modern computers are stored program computers, whereas IOT devices and chipsets are often stored program computers.</p>
+<p><a href="https://www.britannica.com/technology/stored-program-concept" class="uri">https://www.britannica.com/technology/stored-program-concept</a></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: What is Gordon Bell’s law about the near future of computer class?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Gordon Bell’s law determines the scale and ubiquity of computer systems, explaining how computers are getting smaller and more prolific in society. He describes that Mainframe computers were initially the most important, though with time computers are getting smaller and more ubiquitous, to the point that modern computers may look more like swarms of sensors and microcomputers. He states that there is a new class of computer every decade, derived from cheaper components and transistors. This class can then overtake existing classes as it evolves.</p>
+<p><a href="http://gordonbell.azurewebsites.net/CACM%20Bell" class="uri">http://gordonbell.azurewebsites.net/CACM%20Bell</a>’s%20Law%20Vol%2051.%202008-January.pdf</p>
+<h2 id="week-1-lab-work">Week 1 Lab Work</h2>
+<pre class="plaintext"><code>Task: instructions to install Fedora on Virtual Box
+
+Step 0: Download Fedora from https://getfedora.org/en/workstation/ &amp; install VirtualBox (apt)
+Step 1: Creating a VM and allocating resources
+Step 2: Install the operating system using the ISO
+Step 3: Create a user account and apply updates</code></pre>
+<h3 id="step-0-downloads">Step 0: Downloads</h3>
+<p>I already have VirtualBox installed on my operating system as it’s useful for trying out other Linux distributions and emulating various operating systems. I downloaded the Fedora ISO from the website easily and have it ready in my Downloads folder.</p>
+<h3 id="step-1-creating-a-vm-and-allocating-resources">Step 1: Creating a VM and allocating resources</h3>
+<p>VirtualBox Main View <img src="img/lab1-001.png" alt="VirtualBox Main View" /> Setting up the Operating System with a name and type <img src="img/lab1-002.png" alt="Setting up the Operating System with a name and type" /> Setting memory to 4096MB <img src="img/lab1-003.png" alt="Setting memory to 4096MB" /> Setting the disk type to VMDK for Compatibility <img src="img/lab1-004.png" alt="Setting the disk type to VMDK for Compatibility" /> Setting the VMDK disk to 16GB <img src="img/lab1-005.png" alt="Setting the VMDK disk to 16GB" /> The new home screen for VirtualBox <img src="img/lab1-006.png" alt="The new home screen for VirtualBox" /> Setting a boot disk for Fedora <img src="img/lab1-007.png" alt="Setting a boot disk for Fedora" /> Selecting the ISO from my Downloads folder <img src="img/lab1-008.png" alt="Selecting the ISO from my Downloads folder" /> Here it is properly set up as a Live CD <img src="img/lab1-009.png" alt="Here it is properly set up as a Live CD" /> On boot it asks for a start-up disk, set that to Fedora <img src="img/lab1-010.png" alt="On boot it asks for a start-up disk, set that to Fedora" /></p>
+<h3 id="step-2-install-the-operating-system-using-the-iso">Step 2: Install the operating system using the ISO</h3>
+<p>Freshly launched <img src="img/lab1-011.png" alt="Freshly launched" /> Here’s the live disk bootloader <img src="img/lab1-012.png" alt="Here’s the live disk bootloader" /> Linux boot screen <img src="img/lab1-013.png" alt="Linux boot screen" /> Fedora uses a fairly stock Gnome Linux installer - Install to Disk <img src="img/lab1-014.png" alt="Fedora uses a fairly stock Gnome Linux installer - Install to Disk" /> Set the keyboard language to English US <img src="img/lab1-015.png" alt="Set the keyboard language to English US" /> Set the hard disk to the VBOX Hard Drive <img src="img/lab1-016.png" alt="Set the hard disk to the VBOX Hard Drive" /> Everything seems ok, ready to begin <img src="img/lab1-017.png" alt="Everything seems ok, ready to begin" /> All installed on disk <img src="img/lab1-018.png" alt="All installed on disk" /> Now to reboot <img src="img/lab1-019.png" alt="Now to reboot" /> Almost ready to reboot <img src="img/lab1-020.png" alt="Almost ready to reboot" /> Disconnect the Live CD <img src="img/lab1-021.png" alt="Disconnect the Live CD" /></p>
+<h3 id="step-3-create-a-user-account-and-apply-updates">Step 3: Create a user account and apply updates</h3>
+<p>Select the correct bootloader in… looks like systemd-boot? <img src="img/lab1-022.png" alt="Select the correct bootloader in… looks like systemd-boot?" /> Booting nice and quickly <img src="img/lab1-023.png" alt="Booting nice and quickly" /> All okay! Fedora setup looks a lot like Ubuntu <img src="img/lab1-024.png" alt="All okay! Fedora setup looks a lot like Ubuntu" /> Turn off tracking and such <img src="img/lab1-025.png" alt="Turn off tracking and such" /> Set up the user name <img src="img/lab1-026.png" alt="Set up the user name" /> Set up the user password <img src="img/lab1-027.png" alt="Set up the user password" /> Now to apply updates <img src="img/lab1-028.png" alt="Now to apply updates" /> Fedora has a nice stock Gnome experience <img src="img/lab1-029.png" alt="Fedora has a nice stock Gnome experience" /> Lovely old bash <img src="img/lab1-030.png" alt="Lovely old bash" /> Starting the sudo dnf upgrade <img src="img/lab1-031.png" alt="Starting the sudo dnf upgrade" /> 1.1GiB is a lot of data, 800+ packages. Wow. <img src="img/lab1-032.png" alt="1.1GiB is a lot of data, 800+ packages. Wow." /> 9 minutes of execution time. wow. <img src="img/lab1-033.png" alt="9 minutes of execution time. wow." /></p>
+<h2 id="week-2-questions">Week 2 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Explain Moore’s law. Is Moore’s law a Physics law?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Moore’s law specifies that transistor quantity in CPUs will double every two years, as a result of improvements in transistor technology and manufacturing techniques.</p>
+<p>It is not a physics law like Newton’s laws or similar, instead it is a projection based on observations of CPU transistor quantities prior to 1965.</p>
+<p><a href="https://www.investopedia.com/terms/m/mooreslaw.asp" class="uri">https://www.investopedia.com/terms/m/mooreslaw.asp</a></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Modern CPUs are measured in nano-metre scale (e.g. 14 nm CPU). What does this number mean? Is this the size of each individual transistor?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>The nano-meter scale relates to the physical size of each transistor, though more accurately it relates to the physical process that the manufacturer uses to design and manufacture the CPU; a 14nm CPU will be a die cut from a larger wafer, with many copies of the die circuit etched into it from photolithography. The size of the process relates to the smallest possible transistor using the technique, though it doesn’t necessarily relate to the size of each transistor on the die; it’s easier to think of it as the resolution of the process.</p>
+<p><a href="https://www.howtogeek.com/394267/what-do-7nm-and-10nm-mean-and-why-do-they-matter/" class="uri">https://www.howtogeek.com/394267/what-do-7nm-and-10nm-mean-and-why-do-they-matter/</a></p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: Describe the quantum tunneling problem in the transistor design.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>As dies are shrinking more and more, the sizes are getting small enough for quantum phenomena to start acting upon the electrons utilised by the semiconductors in the die. One major problem with this is Quantum Tunneling, whereby a wavefunction (i.e. an electron, which exhibits) can tunnel through a barrier. This is possible due to the quantum uncertainty principle, which states that it’s impossible to measure both position and momentum to a certain degree of accuracy; this limit causes waves to have a low probability of tunneling through an obstacle, depending on the size of the barrier. With decreasing process sizes, this is becoming more and more of an issue.</p>
+<p><a href="https://spectrum.ieee.org/semiconductors/devices/the-tunneling-transistor" class="uri">https://spectrum.ieee.org/semiconductors/devices/the-tunneling-transistor</a></p>
+<h2 id="week-2-lab-work">Week 2 Lab Work</h2>
+<pre class="plaintext"><code>Task: Performing the following Linux commands, using one of the environments we set up in Week 1.
+
+$ date
+$ date &gt; today
+$ cat today
+$ date &gt;&gt; today
+$ cat today
+$ cal 1 2010
+$ ls
+$ ls -l
+$ ls -l &gt; files
+$ cat *
+$ cat p*
+$ mkdir mysub
+$ ls
+$ cd mysub
+$ cd ..
+$ pwd
+$ cd .
+$ cd ~
+$ ls ~/mysub
+$ ls ~
+$ ls ~/..
+$ cp today tomorrow
+$ cd ~/mysub
+$ cp ~/tomorrow .
+$ ls
+$ mv tomorrow files.txt
+$ rm files.txt</code></pre>
+<p>Date, Cat and basic redirection operators <img src="img/lab2-001.png" alt="Date, Cat and basic redirection operators" /> Calendar and Who commands <img src="img/lab2-002.png" alt="Calendar and Who commands" /> ls, ls -l commands <img src="img/lab2-003.png" alt="ls, ls -l commands" /> ls with redirection operators <img src="img/lab2-004.png" alt="ls with redirection operators" /> cat with wildcard operator <img src="img/lab2-005.png" alt="cat with wildcard operator" /> cat with wildcard operator (cont.) <img src="img/lab2-006.png" alt="cat with wildcard operator (cont.)" /> pwd, cd, directory handling <img src="img/lab2-007.png" alt="pwd, cd, directory handling" /> Moving and removing files <img src="img/lab2-008.png" alt="Moving and removing files" /></p>
+<h2 id="week-3-questions">Week 3 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: What is RowHammer? What are the potential solutions?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Relating to physical design of modern DRAM modules, RowHammer is a hardware-level exploit whereby protected bytes on a module can be rewritten by quickly and repeatedly activating rows of memory, like to write, can cause adjacent cells to have random bit flips, which can result in the contents of memory being altered and then executed.</p>
+<p><a href="https://www.techopedia.com/definition/31413/rowhammer" class="uri">https://www.techopedia.com/definition/31413/rowhammer</a></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Compare the three levels of cache.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>As memory gets closer to the CPU, it increases in speed as well. Hard drives are exceptionally slow compared to the CPU itself, so it needs intermediary storage. RAM is faster, however it’s still not fast enough for the CPU to properly utilise (even if it has high throughput: latency is an issue). To solve this, CPUs utilise various levels of cache, which decrease in size as they get faster.</p>
+<p>At the lowest level, CPUs utilise registers to store small amounts of super-fast data, which can be directly operated upon as part of their Fetch-Decode-Execute cycle. These registers are tiny, usually having less than a kilobyte of size. To supplement this, L1 cache, or Level 1, can quickly interact with the registers, swapping out data as needed. L1 cache is in the neighbourhood of 32 kilobytes, which is considerably more than the registers.</p>
+<p>On top of this, L2 cache is above L1, with much larger size, greater than half a megabyte in today’s industry. These modules are slightly slower, but help to step the speed up as data approaches the CPU itself. Finally, there’s L3 cache, which sits directly between L2 cache and the RAM, with much larger sizes up to about 32 megabytes. This cache is slowest, though it’s still considerably faster than RAM. Again, this helps to step up data as it’s needed.</p>
+<p>Multi-Core CPUs complicate this issue, as each CPU needs it’s own cache, fed from the L3 cache, which is usually global. L2 tends to be split off into each core. Additionally, some CPUs may utilise L0 cache or other types of L1 cache, although the same principles apply; data must be sped up gradually as it’s needed by the CPU, which manages this data operation itself.</p>
+<p><a href="https://www.techspot.com/article/2066-cpu-l1-l2-l3-cache/" class="uri">https://www.techspot.com/article/2066-cpu-l1-l2-l3-cache/</a></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: Explain the differences between RAID 1, 5 and 10.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>This question relates to various methods for backing up data using RAID:</p>
+<p>RAID 1 involves mirroring one drive onto another drive, effectively duplicating the contents of one to the other every write. This is a transparent way to back up data, as each drive can read and write simultaneously. Additionally, it protects the data on the array from a single drive failure, as both drives would need to fail for the data to be lost.</p>
+<p>RAID 5 involves spanning the data across multiple drives using stripes, whereby all the drives have a single visible partition on it. This is slightly more opaque than RAID 1, as the data must be split up using a RAID controller or similar and distributed to each drive. This can speed up reads and writes though, as you get the combined throughput of each drive.</p>
+<p>Additionally, RAID 5 has so-called ‘parity blocks’, whereby the stripes distributed across the other drives are run through a checksum, resulting in a unique block which can be used to recover data should a single drive on the array be lost; the data on the missing drive can be reconstructed using the other drives and with the parity data, by reversing the checksum. This can protect many drives from single drive failures, without having to clone one to one. The downside of RAID 5 is that the whole array can be lost should multiple drives fail in quick succession.</p>
+<p>RAID 10 is a fusion of RAID 0, where drives are striped and blocks are spanned across the stripes, and RAID 1, where drives are mirrored one to one. This means that the throughput is doubled like with RAID 0, but affords two drive failures (although not on the same side of the span). This is inefficient compared to RAID 1 and RAID 5, as it’s less fast than RAID 5 and less resistant to failure than RAID 1, however it’s a good option for one to one mirroring with improved throughput.</p>
+<p><a href="https://www.prepressure.com/library/technology/raid" class="uri">https://www.prepressure.com/library/technology/raid</a></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 4: Describe the concept of processing in memory.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>With processing becoming more easy on smaller and cheaper components, storage in memory revolves around the memory module itself optimising it’s own storage to better serve the system accessing the memory itself. This can be seen in Solid State Hard Drives, where a small SSD cache (usually around 32GB) is paired with a larger hard disk drive, and an onboard processor stores data that is accessed more often on the SSD cache due to increased speed and decreased latency.</p>
+<p>This concept is used today in products like Intel Optane, whereby a high-speed SSD and processor is used to supplement another drive.</p>
+<p><a href="https://www.techopedia.com/definition/29395/processing-in-memory-pim" class="uri">https://www.techopedia.com/definition/29395/processing-in-memory-pim</a></p>
+<h2 id="week-3-lab-work">Week 3 Lab Work</h2>
+<pre class="plaintext"><code>Task: Performing the following Linux commands, using one of the environments we set up in Week 1.
+
+$ ps -ef
+$ sleep 10 &amp;
+$ sleep 1000 (then ctrl+z)
+$ bg
+$ jobs
+$ fg %1
+
+$ sleep 100 (then ctrl+c)
+$ sleep 100 &amp;
+$ jobs
+$ kill %1
+
+$ sleep 1000 &amp;
+$ ps
+$ kill (pid)
+$ kill -9 (pid)
+
+$ vi
+  Enter the text: &quot;The quick fox jumps over the lazy dog&quot;
+  Find a way to save this text into a file “viFile.txt” without quitting.
+  Find a way to quit the editor now.
+  List the content of this file with the more and the cat commands.
+
+$ wget https://gutenberg.org/files/1661/1661-0.txt
+$ head -20 1661-0.txt</code></pre>
+<p>Basic background processes <img src="img/lab3-01.png" alt="Basic background processes" /> Ctrl+Z Operator &amp; bg <img src="img/lab3-02.png" alt="Ctrl+Z Operator &amp; bg" /> Jobs &amp; killing based on job list <img src="img/lab3-03.png" alt="Jobs &amp; killing based on job list" /> ps command &amp; killing based on pid <img src="img/lab3-04.png" alt="ps command &amp; killing based on pid" /> vi editing <img src="img/lab3-05.png" alt="vi editing" /> Writing the vi editor to out (viFile.txt) <img src="img/lab3-06.png" alt="Writing the vi editor to out (viFile.txt)" /> Writes ok… <img src="img/lab3-07.png" alt="Writes ok…" /> Force quit <img src="img/lab3-08.png" alt="Force quit" /> Quit ok… <img src="img/lab3-09.png" alt="Quit ok…" /> cat the file <img src="img/lab3-10.png" alt="cat the file" /> more the file <img src="img/lab3-10.png" alt="more the file" /> wget from the directory provided <img src="img/lab3-12.png" alt="wget from the directory provided" /> Showing the file using less <img src="img/lab3-14.png" alt="Showing the file using less" /> Showing the first 20 lines using head -20 <img src="img/lab3-15.png" alt="Showing the first 20 lines using head -20" /> Showing the first 20 lines using head -20 <img src="img/lab3-16.png" alt="Showing the first 20 lines using head -20" /></p>
+<h2 id="week-4-questions">Week 4 Questions</h2>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Explain the difference between a digital sensor and an analog sensor.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Digital sensors produce a digital signal rather than an analogue signal, which could require extra processing on top to interpret for a computer; digital sensors are easier to use with computers.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Describe the responsibilities of the “Cloud processing unit” (the top layer of IoT).</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>With regards to IoT, the cloud processing unit is a server or decentralised set of servers which process and store data from computers lower in the stack. This means that all of the IoT devices communicate with the top layer of the stack for processing and storage rather than having local processing and storage like with traditional computers.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: Explain the difference between a microcontroller (e.g. Arduino) and an embedded board (e.g. Raspberry Pi).</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Microcontrollers like Arduinos use firmware to perform tasks, whereas embedded boards like a Raspberry Pi have a full operating system which then uses software to perform a task. Microcontrollers don’t have a full operating system and are very focussed when compared with embedded boards which can have much broader tasks. Firmware is faster than software which also makes microcontrollers cheaper due to lower hardware and software complexity.</p>
+<h2 id="week-4-lab-work">Week 4 Lab Work</h2>
+<p>Installing OpenJDK 11 <img src="img/lab4-001.png" alt="Installing OpenJDK 11" /> Using vim to edit HelloWorld.java <img src="img/lab4-002.png" alt="Using vim to edit HelloWorld.java" /> Showing that HelloWorld.java exists using cat (batcat) <img src="img/lab4-003.png" alt="Showing that HelloWorld.java exists using cat (batcat)" /> Compiling HelloWorld.java into a class and then running it using Java <img src="img/lab4-004.png" alt="Compiling HelloWorld.java into a class and then running it using Java" /> Editing the file to use the arguments as shown in the example <img src="img/lab4-005.png" alt="Editing the file to use the arguments as shown in the example" /> Compiling it and running it using no arguments and two arguments <img src="img/lab4-006.png" alt="Compiling it and running it using no arguments and two arguments" /></p>
+<h2 id="week-5-questions">Week 5 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Describe the challenges facing mobile computing technology.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>These days there aren’t many issues with mobile computing anymore, as performance and portability have largely been solved through optimisations and improvements in production technology; modern mobile CPUs are incredibly performant, outpacing computers from as little as a decade or two ago.</p>
+<p>Because of this, technology in the mobile computing ecosystem has been primarily focussed on downsizing existing technology, relating to storage, processors, GPUs, displays, and other features which are commonplace on larger electronics; high refresh rate display panels are beginning to find a place in the mobile market, owing to improved production processes.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: What is context awareness? Give one example of a context awareness mobile app.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Context awareness is where a mobile application can utilise existing system context, like time and previous app usage, to change behaviour. This is primarily used for features such as app suggestion, whereby usage statistics can be utilised to recommend an app that the user commonly uses at that time, in that place, or in that order.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: What are the challenges for doing Augmented Reality on a mobile device?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Most of the challenges revolve around machine vision, as the visual signal from the camera(s) can be quite complex to process and add onto; Augmented reality involves a 3D renderer that renders over the image of a camera, and doing so in 3D space is complex enough on its own without factoring in depth and object occlusion.</p>
+<p>Additionally, some forms of augmented reality utilise a fixed eye position to properly overlay the image onto a user’s vision, whereas mobile AR doesn’t have the ability to do this without mounting the phone to someone’s head; the Microsoft Hololens uses a transparent display to add in elements to the user’s vision, rather than on a video feed on a screen.</p>
+<h2 id="week-5-lab-work">Week 5 Lab Work</h2>
+<p>Editing a simple shell script that performs the pwd and ls commands <img src="img/lab5-001.png" alt="Editing a simple shell script that performs the pwd and ls commands" /> Editing a simple shell script that asks the user’s name then says Hello to them <img src="img/lab5-002.png" alt="Editing a simple shell script that asks the user’s name then says Hello to them" /> Here it is being run <img src="img/lab5-003.png" alt="Here it is being run" /> Simple shell script showing loop capability <img src="img/lab5-004.png" alt="Simple shell script showing loop capability" /> Simple shell script showing loop capability being executed <img src="img/lab5-005.png" alt="Simple shell script showing loop capability being executed" /> Simple shell script demonstrating while loops and getting an input to break or continue the loop <img src="img/lab5-006.png" alt="Simple shell script demonstrating while loops and getting an input to break or continue the loop" /> Here it is being executed <img src="img/lab5-007.png" alt="Here it is being executed" /></p>
+<h2 id="week-7-questions">Week 7 Questions</h2>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Describe the three steps to design a circuit, given the specification.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Write the truth table: Using the specification, you can map out a truth table using all the expected inputs and outputs.</p>
+<p>Deriving the Boolean expression: Utilising the truth table, you can work out all the boolean expressions relevant to the circuit based on the required inputs and outputs.</p>
+<p>Simplifying the expression: Utilising logical axioms and laws, you can begin to simplify the boolean expression, which helps to demonstrate what elements are needed in the circuit.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Explain the difference between a sequential logic circuit and a combinational logic circuit.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Combinational logic is sometimes described as time independent logic, as the logic is determined by the inputs at a single time. There’s no concept of state. This differs from sequential logic, where various combinational logic elements are utilised to imply a logical state, whereby the logic of a system is dependent on time, previous and future inputs; adders and multiplexers are combinationally logical, whereas flip-flops are sequentially logical.</p>
+<p>As a rule, in Combinational logic, the output is deterministic based on the inputs, whereas in Sequential logic it is not.</p>
+<p><a href="https://www.differencebetween.com/difference-between-combinational-and-sequential-logic/" class="uri">https://www.differencebetween.com/difference-between-combinational-and-sequential-logic/</a></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: Describe the Set-Reset Flip-Flop. What is its problem?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>This circuit is a bi-stable circuit used in sequential logic, effectively a 1-bit memory cell that can store a value. This value can be set or reset depending on the input utilised. It’s one of the most simple memory cells, and as such has issues. These issues revolve around the truth table having some states that are non-allowed or indeterminate, making the operation of the SR flip-flop more complex. The truth table is as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">!S</th>
+<th style="text-align: left;">!R</th>
+<th style="text-align: left;">Q</th>
+<th style="text-align: left;">!Q</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Q is set to 1 by 0 on !S</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">No change (1 on Q is remembered)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Q is reset to 0 by 0 on !R</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No change (0 on Q is remembered)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Both inputs at 0 - both outputs are 1 (non-allowed state)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">Inputs change from 0,0 to 1,1 together - Outputs are indeterminate</td>
+</tr>
+</tbody>
+</table>
+<p>Due to the non-allowed state and the indeterminate value, this circuit is usually not utilised over more complex memory cells, though the ideas utilised by the SR latch carry over.</p>
+<p><a href="https://www.learnabout-electronics.org/Digital/dig52.php" class="uri">https://www.learnabout-electronics.org/Digital/dig52.php</a></p>
+<h2 id="week-7-lab-work">Week 7 Lab Work</h2>
+<p>Circuit diagram</p>
+<figure>
+<img src="img/lab7-001.png" alt="" /><figcaption>Circuit diagram</figcaption>
+</figure>
+<p>This tool can generate a truth table based on the circuit.</p>
+<figure>
+<img src="img/lab7-002.png" alt="" /><figcaption>Truth Table</figcaption>
+</figure>
+<p>The task is to create a circuit using this truth table. I’ve added in expressions for the table.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">I1</th>
+<th style="text-align: left;">I2</th>
+<th style="text-align: left;">I3</th>
+<th style="text-align: left;">O1</th>
+<th style="text-align: left;">Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>!I1. I2. !I3</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>!I1. I32. I</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>I1. I2. I3</code></td>
+</tr>
+</tbody>
+</table>
+<p>Using this table, we can work out that the boolean expression for this truth table is:</p>
+<p><code>!I1. I2. !I3 + !I1. I2. I3 + I1. I2. I3</code></p>
+<p>Each <code>.</code> is an and gate, and each <code>+</code> is an or gate. Using this, the circuit looks like this:</p>
+<figure>
+<img src="img/lab7-004.png" alt="" /><figcaption>Messy circuit</figcaption>
+</figure>
+<p>This circuit is very messy, however. Utilising these laws and axioms, it’s possible to simplify this boolean expression.</p>
+<figure>
+<img src="img/lab7-003.png" alt="" /><figcaption>Laws and Axioms</figcaption>
+</figure>
+<h2 id="week-8-questions">Week 8 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: What is a data bus, an address bus, and a control bus?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Data busses are a set of wires or a connector inside a computer used for sending data. It often has a bit width of a power of 2, such as 8, 16, 64, etc. This differs from an address bus, which is utilised to address specific memory on another device or another memory location. Data busses directly send data whereas an address bus is more of a data reference.</p>
+<p>Control busses usually refer to system clock or to interrupt request, but the general idea is that they involve control from the CPU or a various chipset for submodules in the PC. The clock and interrupt request busses are utilised by other chips in the PC, such as with memory cells, which rely on clk to set and unset bits.</p>
+<p>https://www.techopedia.com/definition/6733/data-bus</p>
+<p>https://www.techopedia.com/definition/292/address-bus</p>
+<p>https://www.techopedia.com/definition/303/control-bus</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Explain the signal reflection problem.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Signal reflection is where hardware interfaces like cables or wireless transmissions can be partially reflected rather than being absorbed by the opposing receiver. This can affect the clarity of the signal, potentially causing data loss due to the signal being less clear. With physical cables it arises because of imperfections in the cable, whether it’s copper or fiber or something else. In ideal scenarios it’s not a problem, but with real-world scenarios it must be considered as a factor as it can introduce issues.</p>
+<p>https://www.infobloom.com/what-is-signal-reflection.htm</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: What are the problems of parallel communication?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Parallel communication is where data is sent using multiple data lines, a byte or more at a time, rather than a single data line, with each bit in a sequence. It is much faster as there’s simply more width to the connection. Some of the issues arise from the hardware complexity of the communication, as it takes at least 8x as many traces/wires to implement. Additionally, if a single line is damaged, all of the data sent will be incomplete. Finally, crosstalk is a phenomenon whereby some of the bits can be flipped due to various types of interference, causing the bytes sent to be incorrect. These issues are mitigated in serial communication as it’s more obvious if the data is corrupted, and the overall complexity is much lower.</p>
+<h2 id="week-8-lab-work">Week 8 Lab Work</h2>
+<ol type="1">
+<li>Download the following files on the course website. Make sure they are in the same directory.</li>
+</ol>
+<ul>
+<li><em>junit-4.12.jar</em>: the main JUnit testing package.</li>
+<li><em>hamcrest-core-1.3.jar</em>: the framework for doing object matchings.</li>
+<li><em>Calculator.java</em>: the Java program to be tested. It contains a function to add 2 numbers.</li>
+</ul>
+<ol start="2" type="1">
+<li><p>Create the following Java tester file “CalculatorTest.java”.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="kw">import static</span><span class="im"> org.junit.Assert.*;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="kw">import</span><span class="im"> org.junit.Test;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true"></a><span class="kw">public</span> <span class="kw">class</span> CalculatorTest</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true"></a>{</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true"></a>  <span class="at">@Test</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true"></a>  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">testAdd1</span>() <span class="co">// 1st test</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true"></a>  {</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true"></a>    Calculator calculator = <span class="kw">new</span> <span class="fu">Calculator</span>();  <span class="co">// create a new object to be tested</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true"></a>    <span class="dt">double</span> result = calculator.<span class="fu">add</span>(<span class="dv">10</span>, <span class="dv">50</span>);    <span class="co">// try adding 50 to 10</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true"></a>    <span class="fu">assertEquals</span>(<span class="dv">60</span>, result, <span class="dv">0</span>);               <span class="co">// used to check the result</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true"></a>  }</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true"></a>  <span class="at">@Test</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true"></a>  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">testAdd2</span>()</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true"></a>  {</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true"></a>    Calculator calculator = <span class="kw">new</span> <span class="fu">Calculator</span>();</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true"></a>    <span class="dt">double</span> result = calculator.<span class="fu">add</span>(<span class="fl">7.</span><span class="dv">5</span>,<span class="fl">1.</span><span class="dv">5</span>);</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true"></a>    <span class="fu">assertEquals</span>(<span class="fl">9.</span><span class="dv">0</span>, result, <span class="dv">0</span>);</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true"></a>  }</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true"></a>}</span></code></pre></div></li>
+<li><p>Compile all java files. The command line argument <code>-cp</code> is used to specify the class path of the JUnit files. On Linux: <code>javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *.java</code></p></li>
+<li><p>Run the test. On Linux: <code>java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest</code></p></li>
+</ol>
+<p>Nothing too bad this week, just some effort making sure that I’ve followed the brief properly.</p>
+<figure>
+<img src="img/lab8-001.png" alt="" /><figcaption>Lab 8 work</figcaption>
+</figure>
+<h2 id="week-9-questions">Week 9 Questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 1: Describe 3 benefits for using the Assembly language.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>No compiler in the way which can have knock on effects like reduced performance and strange optimisation: the optimisation and function is wholly within your control. Additionally there’s no compilation time as the program is already set for usage on the CPU, it just needs converting into Machine code. It can be much faster as the program uses internal registers rather than RAM, cutting down on memory management time. Thirdly, you get direct hardware control because you get full access to the CPU registers and instructions, rather than relying on a library or compiler to handle the integration indirectly.</p>
+<p><a href="https://theencarta.com/advantages-uses-assembly-language/" class="uri">https://theencarta.com/advantages-uses-assembly-language/</a></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 2: Explain this Assembly command: <code>LDR r1, [r0]</code>.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>This command loads the value of register <code>r0</code> into the register <code>r1</code>.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question 3: What is the problem when comparing signed and unsigned value?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>-1 in signed binary is a full set of 1’s, so in 16 bit it’s 1111111111111111, which is the max value of an unsigned integer. So comparing an unsigned integer with a signed integer can produce false comparisons if the signed integer is negative (i.e. first bit is 1), as an unsigned integer would use that as a positive value rather than a negative one.</p>
+<h2 id="week-9-lab-work">Week 9 Lab Work</h2>
+<ol type="1">
+<li>Convert the binary number 11110 (in base to) to a decimal number (in base 10). Show the conversion method.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">16</th>
+<th style="text-align: left;">8</th>
+<th style="text-align: left;">4</th>
+<th style="text-align: left;">2</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>16 + 8 + 4 + 2 = 30</strong></p>
+<ol start="2" type="1">
+<li>Convert the decimal number 99 into a binary number.</li>
+</ol>
+<p>99 - 64 = 35</p>
+<p>35 - 32 = 3</p>
+<p>3 - 2 = 1</p>
+<p>1 - 1 = 0</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">64</th>
+<th style="text-align: left;">32</th>
+<th style="text-align: left;">16</th>
+<th style="text-align: left;">8</th>
+<th style="text-align: left;">4</th>
+<th style="text-align: left;">2</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Convert the Hexadecimal number AB (in base 16) into a binary number.</li>
+</ol>
+<pre><code>1 = 1
+2 = 10
+3 = 11
+4 = 100
+5 = 101
+6 = 110
+7 = 111
+8 = 1000
+9 = 1001
+A = 1010
+B = 1011
+C = 1100
+D = 1101
+E = 1110
+F = 1111</code></pre>
+<p><strong>AB = 10101011</strong></p>
+</div>

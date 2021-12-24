@@ -1,0 +1,42 @@
+/*
+
+functionality is different from regular css; most keywords use prefix -fx-[name]
+
+https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html
+
+*/
+
+#Layout {
+  -fx-grid-lines-visible: false;
+  -fx-hgap: 5;
+  -fx-vgap: 5;
+  -fx-padding: 10;
+  -fx-background-color: #fff;
+  -fx-font: 12pt "Fira Code";
+}
+
+#Buttons {
+  -fx-pref-columns: 6;
+  -fx-pref-tile-width: 75;
+  -fx-hgap: 5;
+  -fx-vgap: 5;
+}
+
+.button {
+  -fx-font: 14pt "Fira Code";
+  -fx-background-color: #ddd;
+}
+
+.TextField {
+  -fx-background-color: #ddd;
+}
+
+/* https://stackoverflow.com/questions/21493634/javafx-css-styling-of-textarea-does-not-work */
+/* https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#textarea */
+.TextArea .content {
+  -fx-background-color: #ddd;
+}
+
+.ScrollPane {
+  -fx-background-color: #ddd;
+}
